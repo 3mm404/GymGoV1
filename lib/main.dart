@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/custom/bottom_nav.dart';
+import 'package:flutter_application_1/custom/navigation_bottons.dart';
 
 void main() {
-  runApp(MiApp());
+  runApp(const MainApp());
 }
 
-class MiApp extends StatelessWidget {
-  const MiApp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Gimnasio App',
-      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Arial'),
-      home: NavBarButtons(),
+      home: NavigationBottons(),
     );
   }
 }
