@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/l10n/strings.dart';
 import 'package:flutter_application_1/pages/home.page.dart';
+import 'package:flutter_application_1/pages/membership..page.dart';
+import 'package:flutter_application_1/pages/mykey.dart';
+import 'package:flutter_application_1/pages/searchgym.dart';
 import 'package:flutter_application_1/pages/setting.page.dart';
 
 class NavigationBottons extends StatefulWidget {
@@ -11,25 +14,30 @@ class NavigationBottons extends StatefulWidget {
 }
 
 class _NavigationBottonsState extends State<NavigationBottons> {
-  int _currentIndex = 0; // este  muestra la posision del index este parte del 0
+  int _currentIndex = 0;
 
-  final List<Widget> _screen = [
-    const HomePage(), // el homepage esta en la pocicion 1
+  final List<Widget> _screens = [
+    const HomePage(),
+    const Membership(),
+    const MyKey(),
+    const SearchGym(),
     const SettingUser(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:
-          // accediendo a la lista de screen y mostrar la posiscion idicada por currentindex
-          _screen[_currentIndex],
+      body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,
         onTap: (index) => setState(() => _currentIndex = index),
-        selectedItemColor: Colors.blueAccent,
-        unselectedItemColor: Colors.grey,
+        selectedItemColor:
+            Theme.of(context).bottomNavigationBarTheme.selectedItemColor ??
+            Colors.blueAccent,
+        unselectedItemColor:
+            Theme.of(context).bottomNavigationBarTheme.unselectedItemColor ??
+            Colors.grey,
         showUnselectedLabels: true,
         items: [
           BottomNavigationBarItem(

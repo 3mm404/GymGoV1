@@ -34,6 +34,14 @@ class AppColors {
   static const Color accentPink = Color(0xFFFF375F);
   static const Color accentTeal = Color(0xFF64D2FF);
 
+  // Buttons and Hover - Light Theme
+  static const Color buttonBarLight = Color.fromARGB(255, 0, 0, 0);
+  static const Color buttonBarHoverLight = Color(0xFF64D2FF);
+
+  // Buttons and Hover - Dark Theme
+  static const Color buttonBarDark = Color.fromARGB(255, 255, 255, 255);
+  static const Color buttonBarHoverDark = Color.fromARGB(255, 48, 114, 255);
+
   // ♻️ Gradients
   static const Gradient blueGradient = LinearGradient(
     colors: [Color(0xFF0A84FF), Color(0xFF64D2FF)],
@@ -46,4 +54,8 @@ class AppColors {
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
   );
+
+  static var selectedNavItemDark;
+
+  static var selectedNavItemLight;
 }
