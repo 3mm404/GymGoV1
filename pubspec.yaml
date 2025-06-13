@@ -9,17 +9,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  font_awesome_flutter: ^10.5.0
-  percent_indicator: ^4.2.3
-  flutter_svg: ^2.0.7
-  google_fonts: ^6.1.0
-  flutter_animate: ^4.2.0
+  http: ^1.4.0
+  font_awesome_flutter: ^10.5.0  # para iconos de Font Awesome
+  percent_indicator: ^4.2.3 # para indicadores de porcentaje
+  flutter_svg: ^2.0.7  # para SVGs
+  google_fonts: ^6.1.0 # para fuentes personalizadas
+  flutter_animate: ^4.2.0 # para animaciones
+  provider: ^6.1.0   # para la gestión del estado
+  shared_preferences: ^2.2.2  # para la persistencia de datos
+  injectable: ^2.4.2  # para inyección de dependencias
+  get_it: ^7.6.4     # para el contenedor de dependencias
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  build_runner: ^2.4.8  # para generación de código
+  injectable_generator: ^2.4.2  # para generar código de inyección de dependencias
 
 flutter:
   uses-material-design: true

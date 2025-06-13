@@ -1,0 +1,74 @@
+🧭 Ruta de Aprendizaje (para tu perfil)
+
+Aquí tienes un plan personalizado para que desarrolles el rol de Purple Team poco a poco:
+🟣 Etapa 1 – Fundamentos técnicos (1-2 meses)
+
+✅ Aprende a fondo:
+
+    Redes (TCP/IP, DNS, HTTP, puertos, firewalls)
+
+    Linux (comandos básicos, usuarios, permisos, servicios)
+
+    Cómo funcionan servidores web, backend y bases de datos (MySQL, PostgreSQL, MongoDB)
+
+💡 Herramientas:
+
+    Wireshark, nmap, tcpdump, netstat, ss
+
+🟣 Etapa 2 – Hacking ético y ofensiva (2-3 meses)
+
+✅ Aprende sobre:
+
+    OWASP Top 10 (XSS, SQLi, CSRF, etc.)
+
+    Escaneo de vulnerabilidades (con Burp Suite, sqlmap, ffuf)
+
+    Explotación de sistemas (Metasploit, scripts Python)
+
+    Hacking de APIs y backends
+
+💡 Practica en:
+
+    TryHackMe
+
+    HackTheBox
+
+    PortSwigger Web Academy
+
+🟣 Etapa 3 – Defensa y análisis (2 meses)
+
+✅ Aprende sobre:
+
+    SIEM (Graylog, Splunk, ELK Stack)
+
+    Análisis de logs
+
+    Hardening de servidores
+
+    Análisis de incidentes (Forense)
+
+    Seguridad en el desarrollo (DevSecOps)
+
+💡 Herramientas:
+
+    auditd, fail2ban, OSSEC, iptables
+
+🟣 Etapa 4 – Integra todo (Purple mindset)
+
+✅ Proyectos sugeridos:
+
+    Simula un ataque, detecta y genera el reporte
+
+    Crea un backend vulnerable (con Go o Python) y luego lo aseguras
+
+    Automatiza un escaneo de seguridad con Python
+
+    Documenta una auditoría completa: ataque + defensa
+
+📚 Recursos clave para ti
+Tema	Recurso
+Redes y Linux	Curso gratuito de Cisco Networking
+Hacking ético	TryHackMe: Complete Beginner to SOC Analyst or Pentester Path
+Seguridad Web	Web Security Academy
+Backend y APIs	Aprende FastAPI (Python) o Gin (Go)
+DevSecOps	OWASP, Docker, GitHub Actions con escáneres como Trivy, Snyk
